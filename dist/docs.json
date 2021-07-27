@@ -1,0 +1,117 @@
+{
+  "api": {
+    "name": "BiometricAuthPlugin",
+    "slug": "biometricauthplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "isAvailable",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "AvailableOptions"
+        ],
+        "slug": "isavailable"
+      },
+      {
+        "name": "verify",
+        "signature": "(options: { reason: string; }) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ reason: string; }"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "VerifyOptions"
+        ],
+        "slug": "verify"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "AvailableOptions",
+      "slug": "availableoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "has",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "status",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "ErrorCode"
+          ],
+          "type": "ErrorCode"
+        }
+      ]
+    },
+    {
+      "name": "ErrorCode",
+      "slug": "errorcode",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "error",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "description",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "VerifyOptions",
+      "slug": "verifyoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "verified",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "status",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "ErrorCode"
+          ],
+          "type": "ErrorCode"
+        }
+      ]
+    }
+  ],
+  "enums": []
+}
